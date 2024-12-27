@@ -209,7 +209,10 @@
                 placeholder="Ваш e-mail"
             /></label>
 
-            <button class="button button-blue" type="submit">
+            <button
+              class="button button-blue subscription-button"
+              type="submit"
+            >
               Подписаться
             </button>
           </form>
@@ -316,6 +319,140 @@
           ></a>
         </section>
       </div>
+
+      <section class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg
+              class="modal-close-icon"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18711_342)">
+                <path
+                  d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18711_342">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <div class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form action="https://echo.htmlacademy.ru/" class="modal-form">
+              <div class="field-group">
+                <label class="form-label form-label-search" for="date-in"
+                  >Дата заезда:</label
+                >
+                <p class="field-container">
+                  <input
+                    class="field"
+                    id="date-in"
+                    type="text"
+                    name="date-in"
+                    placeholder="27 апреля 2020"
+                  />
+                  <span class="field-message error"
+                    >Мы не можем отправить вас в прошлое.</span
+                  >
+                </p>
+              </div>
+              <div class="field-group">
+                <label class="form-label form-label-search" for="date-out"
+                  >Дата выезда:</label
+                >
+                <p class="field-container">
+                  <input
+                    class="field"
+                    id="date-out"
+                    type="text"
+                    name="date-out"
+                    placeholder="1 сентября 2021"
+                  /><span class="field-message"
+                    >На эти даты есть свободные номера. Пока есть.</span
+                  >
+                </p>
+              </div>
+              <div class="field-group field-group-adults">
+                <label class="form-label form-label-search" for="adults"
+                  >Взрослые:</label
+                >
+                <span class="search-number">
+                  <button
+                    class="search-number-button search-number-button-minus"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                  <input
+                    class="field field-number"
+                    id="adults"
+                    type="number"
+                    name="adults"
+                    placeholder="2"
+                  />
+                  <button
+                    class="search-number-button search-number-button-plus"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button></span
+                >
+              </div>
+              <div class="field-group field-group-children">
+                <span class="form-label form-label-button form-label-search"
+                  ><label for="children">Дети:</label
+                  ><button class="modal-search-info" type="button">
+                    <span class="visually-hidden"
+                      >Посмотреть дополнительную информацию</span
+                    >
+                    <span class="popover popover-children">
+                      Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.
+                    </span>
+                  </button></span
+                >
+
+                <span class="search-number"
+                  ><button
+                    class="search-number-button search-number-button-minus"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                  <input
+                    class="field field-number"
+                    id="children"
+                    type="number"
+                    name="children"
+                    placeholder="1"
+                  />
+                  <button
+                    class="search-number-button search-number-button-plus"
+                    type="button"
+                  >
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button></span
+                >
+              </div>
+              <input
+                class="submit-button submit-button-search"
+                type="submit"
+                value="Найти"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
