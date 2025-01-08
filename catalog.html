@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог гостиниц Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="page">
@@ -141,7 +142,7 @@
                         name="infrastructure"
                         checked
                       /><span class="control-mark"></span
-                      ><span class="control-label">Паркинг</span></label
+                      ><span class="control-label">Парковка</span></label
                     >
                   </li>
                   <li class="catalog-filter-item">
@@ -231,13 +232,19 @@
 
                   <div class="filter-range-slider">
                     <div class="range-scale">
-                      <div class="range-bar" style="width: 227px; left: 0px">
-                        <button class="range-toggle range-toggle-min">
+                      <div class="range-bar" style="width: 237px; left: 0px">
+                        <button
+                          class="range-toggle range-toggle-min"
+                          type="button"
+                        >
                           <span class="visually-hidden"
                             >изменить минимальную цену</span
                           >
                         </button>
-                        <button class="range-toggle range-toggle-max">
+                        <button
+                          class="range-toggle range-toggle-max"
+                          type="button"
+                        >
                           <span class="visually-hidden"
                             >изменить максимальную цену</span
                           >
@@ -527,7 +534,10 @@
                 placeholder="Ваш e-mail"
             /></label>
 
-            <button class="button button-blue subscription-button">
+            <button
+              class="button button-blue subscription-button"
+              type="submit"
+            >
               Подписаться
             </button>
           </form>
